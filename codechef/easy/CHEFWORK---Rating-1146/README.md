@@ -73,7 +73,7 @@ Chef can hire 1 worker: worker 3, who is an author-translator. In total, he pays
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-31T15:17:08.219Z  
+**Submitted:** 2026-08-31T15:19:56.992Z  
 
 ```java
 import java.util.Scanner;
@@ -94,9 +94,9 @@ public class Main {
         }
 
         // Your code goes here
-        int one=Integer.MAX_VALUE;
-        int two=Integer.MAX_VALUE;
-        int three=Integer.MAX_VALUE;
+        int one=;
+        int two=9999;
+        int three=9999;
         
         for(int i=0;i<n;i++)
         {
