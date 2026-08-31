@@ -45,14 +45,17 @@ public class Main {
             
         }
         
-        if(three<(one+two))
-        {
-            System.out.println(three);
-        }
-        else{
-            int result=one+two;
-            System.out.println(result);
-        }
+        int result;
+         if(three<one+two)
+         {
+             result=three;
+         }
+         else{
+             result=(one+two);
+         }
+         System.out.println(result);
+        
+       
 
         
         
