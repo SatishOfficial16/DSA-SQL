@@ -73,7 +73,7 @@ Chef can hire 1 worker: worker 3, who is an author-translator. In total, he pays
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-31T15:02:38.253Z  
+**Submitted:** 2026-08-31T15:17:08.219Z  
 
 ```java
 import java.util.Scanner;
@@ -123,14 +123,17 @@ public class Main {
             
         }
         
-        if(three<(one+two))
-        {
-            System.out.println(three);
-        }
-        else{
-            int result=one+two;
-            System.out.println(result);
-        }
+        int result;
+         if(three<one+two)
+         {
+             result=three;
+         }
+         else{
+             result=(one+two);
+         }
+         System.out.println(result);
+        
+       
 
         
         
