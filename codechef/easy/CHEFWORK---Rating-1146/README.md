@@ -73,7 +73,7 @@ Chef can hire 1 worker: worker 3, who is an author-translator. In total, he pays
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-31T15:01:46.064Z  
+**Submitted:** 2026-08-31T15:02:38.253Z  
 
 ```java
 import java.util.Scanner;
