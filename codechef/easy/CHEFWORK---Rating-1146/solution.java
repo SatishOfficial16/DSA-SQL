@@ -16,9 +16,9 @@ public class Main {
         }
 
         // Your code goes here
-        int one=Integer.MAX_VALUE;
-        int two=Integer.MAX_VALUE;
-        int three=Integer.MAX_VALUE;
+        int one=;
+        int two=9999;
+        int three=9999;
         
         for(int i=0;i<n;i++)
         {
