@@ -24,12 +24,12 @@ public class Main {
         {
             if(t[i]==1)
             {
-                if(c[i]<one)
+                if(c[i]<one && c[i]>=0)
                 {
                     one=c[i];
                 }
             }
-           else if(t[i]==2)
+           else if(t[i]==2 && c[i]>=0)
             {
                 if(c[i]<two)
                 {
@@ -37,7 +37,7 @@ public class Main {
                 }
             }
             else{
-                if(c[i]<three)
+                if(c[i]<three && c[i]>=0)
                 {
                     three=c[i];
                 }
