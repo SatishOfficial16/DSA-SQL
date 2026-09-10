@@ -66,7 +66,7 @@ Output
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-10T20:22:29.302Z  
+**Submitted:** 2026-09-10T20:24:26.363Z  
 
 ```java
 import java.util.*;
@@ -88,8 +88,16 @@ class Codechef
 		    for(int i=0;i<n;i++)
 		    {
 		        a[i]=sc.nextInt();
-		        b[i]=sc.nextInt();
+		       
 		    }
+		    
+		    for(int i=0;i<n;i++)
+		    {
+		        b[i]=sc.nextInt();
+		       
+		    }
+		    
+		    
 		    
 		    int count=0;
 		    if(a[0]>=b[0])
