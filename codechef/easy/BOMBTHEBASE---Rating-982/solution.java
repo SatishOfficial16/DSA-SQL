@@ -19,19 +19,19 @@ class Codechef
 		        a[i]=sc.nextInt();
 		    }
 		    int index=0;int  found =0;
-		    for(int i=0;i<n;i++)
-		    {
-		        if(a[i]<x)
-		        {
-		            
-		            index=i;
-		            found=1;
-		        }
-		    }
-		    if (index>0 || found>0 )
-		    {
-		        index+=1;
-		    }
+		   for(int i=n-1;i>=0;i--)
+		   {
+		       if(a[i]<x)
+		       {
+		           index=i;
+		           found=1;
+		           break;
+		       }
+		   }
+		   if(found>0 || index>0)
+		   {
+		       index++;
+		   }
 		    System.out.println(index);
 		    
 		}
