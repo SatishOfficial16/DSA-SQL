@@ -66,7 +66,7 @@ Output
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-10T20:20:33.316Z  
+**Submitted:** 2026-09-10T20:22:29.302Z  
 
 ```java
 import java.util.*;
@@ -99,7 +99,7 @@ class Codechef
 		    
 		    for(int i=1;i<n;i++)
 		    {
-		        if((a[i-1]-a[i])>= b[i])
+		        if((a[i]-a[i-1])>= b[i])
 		        {
 		            count++;
 		        }
