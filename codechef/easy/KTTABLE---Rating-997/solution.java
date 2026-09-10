@@ -17,8 +17,16 @@ class Codechef
 		    for(int i=0;i<n;i++)
 		    {
 		        a[i]=sc.nextInt();
-		        b[i]=sc.nextInt();
+		       
 		    }
+		    
+		    for(int i=0;i<n;i++)
+		    {
+		        b[i]=sc.nextInt();
+		       
+		    }
+		    
+		    
 		    
 		    int count=0;
 		    if(a[0]>=b[0])
