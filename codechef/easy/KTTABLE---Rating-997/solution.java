@@ -28,7 +28,7 @@ class Codechef
 		    
 		    for(int i=1;i<n;i++)
 		    {
-		        if((a[i-1]-a[i])>= b[i])
+		        if((a[i]-a[i-1])>= b[i])
 		        {
 		            count++;
 		        }
