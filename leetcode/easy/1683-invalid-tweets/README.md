@@ -55,14 +55,14 @@ Tweet 2 has length = 33. It is an invalid tweet.
 ## Solution
 
 **Language:** SQL  
-**Runtime:** 91 ms  
-**Memory:** 0B  
-**Submitted:** 2026-09-14T07:13:14.165Z  
+**Runtime:** 911 ms (beats 9.03%)  
+**Memory:** 0B (beats 100.00%)  
+**Submitted:** 2026-09-14T07:13:45.371Z  
 
 ```sql
 # Write your MySQL query statement below
 select tweet_id from Tweets 
-where length(content)>=15;
+where length(content)>15;
 ```
 
 ---
