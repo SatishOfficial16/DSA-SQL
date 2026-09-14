@@ -59,16 +59,16 @@ In 2015-01-04, the temperature was higher than the previous day (20 -> 30).
 ## Solution
 
 **Language:** SQL  
-**Runtime:** 495 ms (beats 70.15%)  
+**Runtime:** 374 ms (beats 98.02%)  
 **Memory:** 0B (beats 100.00%)  
-**Submitted:** 2026-09-14T09:04:37.596Z  
+**Submitted:** 2026-09-14T09:09:29.147Z  
 
 ```sql
 select w.id
 from Weather w
 join weather w2
-on datediff(w.recordDate,w2.recordDate)=1
-where w.temperature - w2.temperature >0
+on w.recordDate=date_add(w2.recordDate,interval 1 day)
+where w.temperature> w2.temperature
 ```
 
 ---
