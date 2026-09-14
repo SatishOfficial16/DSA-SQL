@@ -1,5 +1,11 @@
-select w.id
-from Weather w
-join weather w2
-on w.recordDate=date_add(w2.recordDate,interval 1 day)
-where w.temperature> w2.temperature
+select id 
+from 
+(
+   select id ,recordDate,temperature,
+   lag(temperature) over(order by recordDate)as pt,
+   lag(recordDate) over (order by recordDate)as pd
+   from Weather
+
+)as temp
+where temperature>pt and
+recordDate=date_Add(pd,interval 1 day)
