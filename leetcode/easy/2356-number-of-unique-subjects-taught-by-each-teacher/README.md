@@ -67,17 +67,13 @@ Teacher 2:
 ## Solution
 
 **Language:** SQL  
-**Runtime:** 2423 ms (beats 5.01%)  
+**Runtime:** 1004 ms (beats 5.01%)  
 **Memory:** 0B (beats 100.00%)  
-**Submitted:** 2026-09-15T13:21:37.620Z  
+**Submitted:** 2026-09-15T13:24:15.538Z  
 
 ```sql
-# Write your MySQL query statement below
-select teacher_id,count(subject_id)as cnt
-from
-(select teacher_id ,subject_id
-from Teacher
-group by teacher_id,subject_id )as temp
+select teacher_id,count(distinct subject_id)as cnt
+from teacher 
 group by teacher_id
 ```
 
