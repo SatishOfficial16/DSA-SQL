@@ -111,9 +111,9 @@ Frozen 2 and Joker have a rating average of 3.5 in February but Frozen 2 is smal
 ## Solution
 
 **Language:** SQL  
-**Runtime:** 1853 ms (beats 14.72%)  
+**Runtime:** 1237 ms (beats 94.46%)  
 **Memory:** 0B (beats 100.00%)  
-**Submitted:** 2026-09-15T14:29:23.595Z  
+**Submitted:** 2026-09-15T14:33:21.857Z  
 
 ```sql
 (SELECT u.NAME AS results
@@ -121,7 +121,7 @@ Frozen 2 and Joker have a rating average of 3.5 in February but Frozen 2 is smal
 FROM  Users u
 join MovieRating m
 on u.user_id=m.user_id
-group by u.user_id,u.name
+group by u.user_id
 order by count(*) desc,
 u.name
 limit 1
@@ -135,7 +135,7 @@ join Movies m
 on m1.movie_id=m.movie_id
 where m1.created_at >='2020-02-01'
 and m1.created_at< '2020-03-01'
-group by m.movie_id,m.title
+group by m.movie_id
 order by avg(m1.rating) desc,
 m.title
 limit 1
