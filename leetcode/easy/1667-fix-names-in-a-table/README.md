@@ -52,15 +52,17 @@ Output:
 ## Solution
 
 **Language:** SQL  
-**Runtime:** 72 ms  
+**Runtime:** 66 ms  
 **Memory:** 0B  
-**Submitted:** 2026-09-16T09:56:13.230Z  
+**Submitted:** 2026-09-16T09:56:42.580Z  
 
 ```sql
-# Write your MySQL query statement below
-select user_id, concat(upper(left(name,1)),lower(substring(name,2)))as name
-from Users
-order by name
+# Write your MySQL query statement below
+select user_id, concat(upper(left(name,1)),lower(substring
+(name,2)))as name
+from Users
+order by user_id
+
 ```
 
 ---
