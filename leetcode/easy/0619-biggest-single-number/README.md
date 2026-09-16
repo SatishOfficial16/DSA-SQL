@@ -84,16 +84,20 @@ Explanation: There are no single numbers in the input table so we return null.
 ## Solution
 
 **Language:** SQL  
-**Runtime:** 117 ms  
-**Memory:** 0B  
-**Submitted:** 2026-09-16T15:06:03.115Z  
+**Runtime:** 402 ms (beats 95.91%)  
+**Memory:** 0B (beats 100.00%)  
+**Submitted:** 2026-09-16T15:07:22.876Z  
 
 ```sql
 # Write your MySQL query statement below
-select max(num)as num
+select max(num
+)as num
+from
+(select max(num)as num
 from Mynumbers
 group by num
 having count(num)=1
+)temp
 ```
 
 ---
