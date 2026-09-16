@@ -86,13 +86,13 @@ Output:
 ## Solution
 
 **Language:** SQL  
-**Runtime:** 81 ms  
-**Memory:** 0B  
-**Submitted:** 2026-09-16T14:58:50.396Z  
+**Runtime:** 699 ms (beats 59.45%)  
+**Memory:** 0B (beats 100.00%)  
+**Submitted:** 2026-09-16T15:00:03.474Z  
 
 ```sql
 # Write your MySQL query statement below
-select e.employee_id,e.name,count(e1.reports_to)as reports_count,ceil(avg(e1.age))as average_age
+select e.employee_id,e.name,count(e1.reports_to)as reports_count,round(avg(e1.age),0)as average_age
 from Employees e join
  Employees e1
  on e.employee_id =e1.reports_to
