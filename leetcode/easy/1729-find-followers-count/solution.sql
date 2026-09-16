@@ -2,4 +2,4 @@ select user_id,count(user_id)as followers_count
 from Followers
 where follower_id !=user_id and follower_id is not Null
 group by user_id
-order by user_id
+order by user_id asc;
