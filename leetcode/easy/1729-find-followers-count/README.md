@@ -58,16 +58,16 @@ The followers of 2 are {0,1}
 ## Solution
 
 **Language:** SQL  
-**Runtime:** 1650 ms (beats 5.01%)  
+**Runtime:** 524 ms (beats 93.98%)  
 **Memory:** 0B (beats 100.00%)  
-**Submitted:** 2026-09-16T15:19:50.803Z  
+**Submitted:** 2026-09-16T15:20:38.489Z  
 
 ```sql
 select user_id,count(user_id)as followers_count
 from Followers
 where follower_id !=user_id and follower_id is not Null
 group by user_id
-order by user_id
+order by user_id asc;
 ```
 
 ---
