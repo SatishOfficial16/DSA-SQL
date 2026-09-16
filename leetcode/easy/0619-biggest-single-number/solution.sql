@@ -5,5 +5,5 @@ from
 (select max(num)as num
 from Mynumbers
 group by num
-having count(num)=1
+having count(*)=1
 )temp
