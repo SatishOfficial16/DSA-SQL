@@ -84,9 +84,9 @@ Explanation: There are no single numbers in the input table so we return null.
 ## Solution
 
 **Language:** SQL  
-**Runtime:** 402 ms (beats 95.91%)  
+**Runtime:** 424 ms (beats 87.77%)  
 **Memory:** 0B (beats 100.00%)  
-**Submitted:** 2026-09-16T15:07:22.876Z  
+**Submitted:** 2026-09-16T15:08:52.940Z  
 
 ```sql
 # Write your MySQL query statement below
@@ -96,7 +96,7 @@ from
 (select max(num)as num
 from Mynumbers
 group by num
-having count(num)=1
+having count(*)=1
 )temp
 ```
 
