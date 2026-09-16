@@ -97,13 +97,13 @@ Products with product_id = 5 is ordered in February a total of (50 + 50) = 100.
 ## Solution
 
 **Language:** SQL  
-**Runtime:** 135 ms  
+**Runtime:** 111 ms  
 **Memory:** 0B  
-**Submitted:** 2026-09-16T11:05:09.356Z  
+**Submitted:** 2026-09-16T11:05:25.800Z  
 
 ```sql
 # Write your MySQL query statement below
-select p.product_name,sum(o.unit)
+select p.product_name,sum(o.unit)as unit
 from Products p 
 join Orders o
 on p.product_id=o.product_id
